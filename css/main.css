@@ -1063,7 +1063,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  */
 header {position: fixed;width: 100%;min-height: 66px;z-index: 600;}
 header .row {position: relative;min-height: 66px;}
-header .top-bar {display: flex;align-items: center;justify-content: center;gap: 10px;background: #000000;min-width: 160px;min-height: 66px;position: absolute;left: 90px;top: 0;}
+header .top-bar {display: flex;align-items: center;justify-content: center;gap: 10px;background: #000000;min-width: 140px;min-height: 45px;position: absolute;left: 90px;top: 0;}
 header .logo {display: flex;align-items: center;justify-content: flex-start;}
 header .logo a {color: var(--color-a);font-size: 30px;margin: 0;padding: 0;}
 
