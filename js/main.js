@@ -209,6 +209,7 @@
 
 		e.preventDefault();
 		toggleButton.toggleClass('is-clicked');
+		$('body').toggleClass('menu-open');
 		nav.slideToggle();
 
 	});
