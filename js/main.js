@@ -56,7 +56,7 @@
 	    // Crea pulsante "Leggi tutto"
 	    const showSpan = document.createElement("span");
 	    showSpan.classList.add("breaker");
-	    showSpan.appendChild(document.createTextNode("Continua..."));
+	    showSpan.appendChild(document.createTextNode("Leggi di più..."));
 	    const showBtn = document.createElement("a");
 	    showBtn.classList.add("btn-breaker");
 	    showBtn.appendChild(showSpan);
