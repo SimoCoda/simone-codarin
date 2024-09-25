@@ -16,31 +16,31 @@
     document.getElementById("year").textContent = currentYear;
 
     
-      const video = document.getElementById("myVideo");
-      if (window.innerWidth <= 768) {
-        // Rimuovi l'attributo autoplay sui dispositivi mobili
-        video.removeAttribute("autoplay");
-  
-        // Stop immediato del video se già in autoplay
-        video.pause();
-      }
-    
-  
     // Esegui la funzione al caricamento della pagina
     window.onload = handleAutoplayOnMobile;
-  
+    
     // Esegui la funzione anche quando la finestra viene ridimensionata
     window.onresize = handleAutoplayOnMobile;
-
+    
     // will first fade out the loading animation
     $("#loader").fadeOut("slow", function () {
       // will fade out the whole DIV that covers the website.
       $("#preloader").delay(300).fadeOut("slow");
-
+      
       trimText();
     });
   });
+  
+  function handleAutoplayOnMobile() {
+    const video = document.getElementById("myVideo");
+    if (window.innerWidth <= 768) {
+      // Rimuovi l'attributo autoplay sui dispositivi mobili
+      video.removeAttribute("autoplay");
 
+      // Stop immediato del video se già in autoplay
+      video.pause();
+    }
+  }
   // TRIM TEXT
   const breakers = ["stop", "STOP"]; // Contenuto dei breaker
 
