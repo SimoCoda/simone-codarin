@@ -1996,7 +1996,7 @@ header .logo a {color: var(--color-a);font-size: 30px;margin: 0;padding: 0;}
 #message-success {color: var(--color-a);}
 #message-warning i, #message-success i {margin-right: 10px;}
 
-@media only screen and (max-width:450px) {
+@media only screen and (max-width:500px) {
 #contatti form .form-field label.error{font-size: .6rem;letter-spacing: .1rem;}
 }
 
