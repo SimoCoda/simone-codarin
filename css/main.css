@@ -1524,7 +1524,7 @@ header .logo a {color: var(--color-a);font-size: 30px;margin: 0;padding: 0;}
  */
 #portfolio {background: #FFFFFF;padding-top: 12rem;padding-bottom: 12rem;}
 #portfolio .folio-item {padding: 0;position: relative;overflow: hidden;}
-#portfolio .folio-item img {vertical-align: middle;-moz-transition: all 0.5s ease-in-out;-o-transition: all 0.5s ease-in-out;-webkit-transition: all 0.5s ease-in-out;-ms-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;}
+#portfolio .folio-item img {vertical-align: middle;-moz-transition: all 0.5s ease-in-out;-o-transition: all 0.5s ease-in-out;-webkit-transition: all 0.5s ease-in-out;-ms-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;transform: scale(.99);}
 #portfolio .overlay {position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: transparent;-moz-transition: all 0.5s ease-in-out;-o-transition: all 0.5s ease-in-out;-webkit-transition: all 0.5s ease-in-out;-ms-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;}
 #portfolio .folio-item-table {display: table;width: 100%;height: 100%;}
 #portfolio .folio-item-cell {display: table-cell;vertical-align: middle;text-align: center;-moz-transition: all 0.5s ease-in-out;-o-transition: all 0.5s ease-in-out;-webkit-transition: all 0.5s ease-in-out;-ms-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;position: relative;left: -100%;}
@@ -1540,19 +1540,17 @@ header .logo a {color: var(--color-a);font-size: 30px;margin: 0;padding: 0;}
  * ------------------------------------------------------------------- 
  */
 @media only screen and (max-width:1024px) {
-	#portfolio .folio-title {
-		font-size: 3.1rem;
-	}
+	#portfolio .folio-title {font-size: 3.1rem;}
 }
 @media only screen and (max-width:768px) {
-	#portfolio .folio-title {
-		font-size: 2.5rem;
-	}
+	#portfolio .folio-title {font-size: 2.5rem;}
+}
+@media only screen and (min-width: 0) and (max-width:600px) {
+	/* #portfolio .folio-item{background: #ebebeb;} */
+	#portfolio .folio-item{box-shadow: 0px 0px 15px 1px #d3d3d3;}
 }
 @media only screen and (max-width:400px) {
-	#portfolio .folio-title {
-		font-size: 2.2rem;
-	}
+	#portfolio .folio-title {font-size: 2.2rem;}
 }
 
 /**
@@ -2117,7 +2115,7 @@ footer .footer-social li {display: inline-block;margin: 0 12px;padding: 0;}
 footer .footer-social li a {color: #FFFFFF;}
 footer .footer-social li a i{font-size: 35px;}
 footer .copyright span {display: inline-block;}
-footer .copyright span::after {content: "|";display: inline-block;padding: 0 1rem 0 1.2rem;color: rgba(255, 255, 255, 0.1);}
+footer .copyright span#year::after {content: "|";display: inline-block;padding: 0 1rem 0 1.2rem;color: rgba(255, 255, 255, 0.1);}
 footer .copyright span:last-child::after {display: none;}
 
 /**
@@ -2126,21 +2124,10 @@ footer .copyright span:last-child::after {display: none;}
  * -------------------------------------------------------------------
  */
 @media only screen and (max-width:768px) {
-	footer {
-		text-align: center;
-	}
-	footer .social {
-		display: block;
-		width: 100%;
-		text-align: center;
-		margin-bottom: 1.5rem;
-	}
-	footer .copyright span {
-		display: block;
-	}
-	footer .copyright span::after {
-		display: none;
-	}
+	footer {text-align: center;}
+	footer .social {display: block;width: 100%;text-align: center;margin-bottom: 1.5rem;}
+	footer .copyright span {display: block;}
+	footer .copyright span#year::after {display: none;}
 }
 
 /**
