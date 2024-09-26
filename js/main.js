@@ -16,6 +16,7 @@
     document.getElementById("year").textContent = currentYear;
 
     document.querySelector("#intro #myVideo").setAttribute("autplay", "true");
+    // IMPORTANTE PER FAR AVVIARE IL VIDEO ANCHE SU DISPOSITIVO MOBILE
     document.querySelector("#intro #myVideo").setAttribute('playsinline', '')
     
     // will first fade out the loading animation
