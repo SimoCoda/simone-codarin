@@ -490,7 +490,7 @@ img.pull-left {
 /* ANIMAZIONE CARICAMENTO */
 /* From Uiverse.io by andrew-demchenk0 */ 
 .no-js #preloader, .oldie #preloader {display: none;}
-#preloader{height: 100%;width: 100%;margin: 0;padding: 0;display: flex;align-items: center;justify-content: center;}
+#preloader{position: fixed;top: 0;left: 0;right: 0;bottom: 0;background: #151515;z-index: 800;height: 100%;width: 100%;margin: 0;padding: 0;display: flex;align-items: center;justify-content: center;}
 .glitch {position: relative;font-size: 55px;font-weight: 700;line-height: 1.2;color: #fff;letter-spacing: 5px;z-index: 1;animation: shift 1s ease-in-out infinite alternate;}
 .glitch:before,
 .glitch:after{display: block;content: attr(data-glitch);position: absolute;top: 0;left: 0;opacity: 0.8;}
