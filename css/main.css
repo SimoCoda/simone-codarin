@@ -2106,7 +2106,8 @@ input {
  */
 footer {padding-bottom: 3rem;font-size: 1.4rem;font-family: "poppins-regular", sans-serif;}
 footer a, footer a:visited {color: #FFFFFF;}
-footer .contact-info p{color: #6e6e6e !important;}
+footer .contact-info p{color: inherit;}
+footer .contact-info p.cell{color: inherit;}
 footer a:hover, footer a:focus {color: var(--color-a);}
 footer .row {max-width: 900px;}
 footer .social {text-align: right;}
