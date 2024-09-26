@@ -1974,7 +1974,7 @@ header .logo a {color: var(--color-a);font-size: 30px;margin: 0;padding: 0;}
 #contatti form .form-field:before, #contatti form .form-field:after {content: "";display: table;}
 #contatti form .form-field:after {clear: both;}
 #contatti form .form-field label.error.false{display: none;}
-#contatti form .form-field label.error {font-family: "poppins-bold", sans-serif;font-size: 1.1rem;line-height: 2.4rem;position: absolute;bottom: -1.2rem;right: .6rem;text-transform: uppercase;letter-spacing: .1rem;padding: 0 2rem;margin: 0;color: #FFFFFF;background: red;}
+#contatti form .form-field label.error{font-family: "poppins-bold", sans-serif;font-size: 1.1rem;line-height: 2.4rem;position: absolute;bottom: -1.2rem;right: .6rem;text-transform: uppercase;letter-spacing: .1rem;padding: 0 2rem;margin: 0;color: #FFFFFF;background: red;}
 #contatti form .form-field label.error::after {position: absolute;left: -5px;top: 50%;margin-top: -6px;border-top: 5px solid transparent;border-bottom: 5px solid transparent;border-right: 5px solid red;content: "";}
 #contatti input[type="text"],
 #contatti input[type="password"],
@@ -1995,6 +1995,10 @@ header .logo a {color: var(--color-a);font-size: 30px;margin: 0;padding: 0;}
 #message-warning {color: #fa0003;}
 #message-success {color: var(--color-a);}
 #message-warning i, #message-success i {margin-right: 10px;}
+
+@media only screen and (max-width:450px) {
+#contatti form .form-field label.error{font-size: .6rem;letter-spacing: .1rem;}
+}
 
 
 /* animiamo il button per il submit del form */
