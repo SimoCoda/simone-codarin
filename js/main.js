@@ -15,9 +15,20 @@
     const currentYear = new Date().getFullYear();
     document.getElementById("year").textContent = currentYear;
 
-    document.querySelector("#intro #myVideo").setAttribute("autplay", "true");
+    let video = document.querySelector("#intro #myVideo")
+    video.setAttribute("autplay", "true");
     // IMPORTANTE PER FAR AVVIARE IL VIDEO ANCHE SU DISPOSITIVO MOBILE
-    document.querySelector("#intro #myVideo").setAttribute('playsinline', '')
+    video.setAttribute('playsinline', '')
+    // Funzione per rilelete se il dispositivo Ã¨ mobile
+    if(video){
+      function isMobileDevice() {
+        return /Mobi|Android/i.test(navigator.userAgent);
+      }
+      // Se il dispositivo Ã¨ mobile, aggiungi l'attributo playsinline
+      if (isMobileDevice() && video) {
+        video.setAttribute("src", "video/codice_phone.mp4");
+      }
+    }
     
     // will first fade out the loading animation
     $("#loader").fadeOut("slow", function () {
