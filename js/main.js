@@ -29,6 +29,13 @@
         video.setAttribute("src", "video/codice_phone.mp4");
       }
     }
+    let videoModali = document.querySelectorAll(".popup-modal .media video");
+    if(videoModali){
+      videoModali.forEach((v) => {
+        v.setAttribute("playsinline", "");
+        v.play();
+      });
+    }
     
     // will first fade out the loading animation
     $("#loader").fadeOut("slow", function () {

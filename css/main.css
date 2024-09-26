@@ -1522,83 +1522,17 @@ header .logo a {color: var(--color-a);font-size: 30px;margin: 0;padding: 0;}
  *
  * ------------------------------------------------------------------- 
  */
-#portfolio {
-	background: #FFFFFF;
-	padding-top: 12rem;
-	padding-bottom: 12rem;
-}
-#portfolio .folio-item {
-	padding: 0;
-	position: relative;
-	overflow: hidden;
-}
-#portfolio .folio-item img {
-	vertical-align: middle;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	-webkit-transition: all 0.5s ease-in-out;
-	-ms-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
-}
-
-#portfolio .overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: transparent;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	-webkit-transition: all 0.5s ease-in-out;
-	-ms-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
-}
-
-#portfolio .folio-item-table {
-	display: table;
-	width: 100%;
-	height: 100%;
-}
-#portfolio .folio-item-cell {
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	-webkit-transition: all 0.5s ease-in-out;
-	-ms-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
-	position: relative;
-	left: -100%;
-}
-
-#portfolio .folio-title {
-	color: #FFFFFF;
-	font-size: 3.3rem;
-	padding: 0 3rem;
-	margin-bottom: 0;
-}
-#portfolio .folio-types {
-	margin: 0;
-	padding: 0;
-	text-transform: uppercase;
-	font-family: "poppins-regular", sans-serif;
-	font-size: 1.2rem;
-	letter-spacing: .1rem;
-	color: rgba(255, 255, 255, 0.6);
-}
-#portfolio .folio-item:hover .overlay {
-	background: rgba(0, 0, 0, 0.8);
-}
-#portfolio .folio-item:hover .folio-item-cell {
-	left: 0;
-}
-#portfolio .folio-item:hover img {
-	-webkit-transform: scale(1.05);
-	-ms-transform: scale(1.05);
-	transform: scale(1.05);
-}
+#portfolio {background: #FFFFFF;padding-top: 12rem;padding-bottom: 12rem;}
+#portfolio .folio-item {padding: 0;position: relative;overflow: hidden;}
+#portfolio .folio-item img {vertical-align: middle;-moz-transition: all 0.5s ease-in-out;-o-transition: all 0.5s ease-in-out;-webkit-transition: all 0.5s ease-in-out;-ms-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;}
+#portfolio .overlay {position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: transparent;-moz-transition: all 0.5s ease-in-out;-o-transition: all 0.5s ease-in-out;-webkit-transition: all 0.5s ease-in-out;-ms-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;}
+#portfolio .folio-item-table {display: table;width: 100%;height: 100%;}
+#portfolio .folio-item-cell {display: table-cell;vertical-align: middle;text-align: center;-moz-transition: all 0.5s ease-in-out;-o-transition: all 0.5s ease-in-out;-webkit-transition: all 0.5s ease-in-out;-ms-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;position: relative;left: -100%;}
+#portfolio .folio-title {color: #FFFFFF;font-size: 3.3rem;padding: 0 3rem;margin-bottom: 0;}
+#portfolio .folio-types {margin: 0;padding: 0;text-transform: uppercase;font-family: "poppins-regular", sans-serif;font-size: 1.2rem;letter-spacing: .1rem;color: rgba(255, 255, 255, 0.6);}
+#portfolio .folio-item:hover .overlay {background: rgba(0, 0, 0, 0.8);}
+#portfolio .folio-item:hover .folio-item-cell {left: 0;}
+#portfolio .folio-item:hover img {-webkit-transform: scale(1.05);-ms-transform: scale(1.05);transform: scale(1.05);}
 
 /**
  * responsive:
@@ -1625,73 +1559,18 @@ header .logo a {color: var(--color-a);font-size: 30px;margin: 0;padding: 0;}
  * Popup Modal - (_layout.scss)
  * ------------------------------------------------------------------
  */
-.popup-modal {
-	max-width: 550px;
-	background: #FFFFFF;
-	position: relative;
-	margin: 0 auto;
-}
-.popup-modal .media {
-	position: relative;
-}
-.popup-modal img {
-	vertical-align: bottom;
-}
-.popup-modal .description-box {
-	padding: 1.8rem 3.6rem 3rem;
-}
-.popup-modal .description-box h4 {
-	font-family: "poppins-bold", sans-serif;
-	font-size: 1.5rem;
-	line-height: 2.4rem;
-	margin-bottom: .6rem;
-}
-.popup-modal .description-box p {
-	font-family: "poppins-regular", sans-serif;
-	font-size: 1.4rem;
-	line-height: 2.4rem;
-	margin-bottom: 12px;
-}
-.popup-modal .categories {
-	font-family: "poppins-bold", sans-serif;
-	font-size: 1.1rem;
-	line-height: 1.8rem;
-	text-transform: uppercase;
-	letter-spacing: .1rem;
-	display: block;
-	text-align: left;
-	color: rgba(0, 0, 0, 0.5);
-}
-.popup-modal .link-box {
-	width: 100%;
-	overflow: hidden;
-	background: #000000;
-}
-.popup-modal .link-box a {
-	font-family: "poppins-bold", sans-serif;
-	font-size: 1.2rem;
-	line-height: 6rem;
-	color: #FFFFFF;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	cursor: pointer;
-	display: block;
-	text-align: center;
-	float: left;
-	width: 50%;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-.popup-modal .link-box a:first-child {
-	border-right: 1px solid rgba(200, 200, 200, 0.1);
-}
-.popup-modal .link-box a:hover {
-	background: var(--color-a2);
-	border: none;
-}
+.popup-modal {max-width: 550px;background: #FFFFFF;position: relative;margin: 0 auto;}
+.popup-modal .media {position: relative;}
+.popup-modal img {vertical-align: bottom;}
+.popup-modal .description-box {padding: 1.8rem 3.6rem 3rem;}
+.popup-modal .description-box h4 {font-family: "poppins-bold", sans-serif;font-size: 1.5rem;line-height: 2.4rem;margin-bottom: .6rem;}
+.popup-modal .description-box p {font-family: "poppins-regular", sans-serif;font-size: 1.4rem;line-height: 2.4rem;margin-bottom: 12px;}
+.popup-modal .categories {font-family: "poppins-bold", sans-serif;font-size: 1.1rem;line-height: 1.8rem;text-transform: uppercase;letter-spacing: .1rem;display: block;text-align: left;color: rgba(0, 0, 0, 0.5);}
+.popup-modal .link-box {width: 100%;overflow: hidden;background: #000000;}
+.popup-modal .link-box a {font-family: "poppins-bold", sans-serif;font-size: 1.2rem;line-height: 6rem;color: #FFFFFF;text-transform: uppercase;letter-spacing: 3px;cursor: pointer;display: block;text-align: center;float: left;width: 50%;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;-webkit-transition: all 0.3s ease-in-out;-ms-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
+.popup-modal .link-box a:first-child {border-right: 1px solid rgba(200, 200, 200, 0.1);}
+.popup-modal .link-box a:hover {background: var(--color-a2);border: none;}
+
 @media only screen and (max-width:600px) {
 	.popup-modal {
 		width: auto;
@@ -2229,6 +2108,7 @@ input {
  */
 footer {padding-bottom: 3rem;font-size: 1.4rem;font-family: "poppins-regular", sans-serif;}
 footer a, footer a:visited {color: #FFFFFF;}
+footer .contact-info p{color: #6e6e6e !important;}
 footer a:hover, footer a:focus {color: var(--color-a);}
 footer .row {max-width: 900px;}
 footer .social {text-align: right;}
