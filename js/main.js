@@ -15,12 +15,7 @@
     const currentYear = new Date().getFullYear();
     document.getElementById("year").textContent = currentYear;
 
-    
-    // Esegui la funzione al caricamento della pagina
-    window.onload = handleAutoplayOnMobile;
-    
-    // Esegui la funzione anche quando la finestra viene ridimensionata
-    window.onresize = handleAutoplayOnMobile;
+    document.querySelector("#intro #myVideo").setAttribute("autplay", "true");
     
     // will first fade out the loading animation
     $("#loader").fadeOut("slow", function () {
@@ -30,17 +25,6 @@
       trimText();
     });
   });
-  
-  function handleAutoplayOnMobile() {
-    const video = document.getElementById("myVideo");
-    if (window.innerWidth <= 768) {
-      // Rimuovi l'attributo autoplay sui dispositivi mobili
-      video.removeAttribute("autoplay");
-
-      // Stop immediato del video se già in autoplay
-      video.pause();
-    }
-  }
   // TRIM TEXT
   const breakers = ["stop", "STOP"]; // Contenuto dei breaker
 

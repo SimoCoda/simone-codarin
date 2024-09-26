@@ -24,18 +24,18 @@ document.addEventListener("DOMContentLoaded", function() {
         // Verifica che l'email sia valida
         const emailPattern = /^[a-z0-9&\'\.\-_\+]+@[a-z0-9\-]+\.[a-z]{2,}$/i;
         if (!emailPattern.test(email)) {
-            document.querySelector('#contact form .form-field label.email.false').classList.remove('false');
+            document.querySelector('#contatti form .form-field label.email.false').classList.remove('false');
             setTimeout(()=>{
-                document.querySelector('#contact form .form-field label.email').classList.add('false');
+                document.querySelector('#contatti form .form-field label.email').classList.add('false');
             },3000)
             isValid = false;
         }
 
         // Controllo della lunghezza del messaggio
         if (message.length < 20) {
-            document.querySelector('#contact form .form-field label.message.false').classList.remove('false');
+            document.querySelector('#contatti form .form-field label.message.false').classList.remove('false');
             setTimeout(()=>{
-                document.querySelector('#contact form .form-field label.message').classList.add('false');
+                document.querySelector('#contatti form .form-field label.message').classList.add('false');
             },3000)
             isValid = false;
         }

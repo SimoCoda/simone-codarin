@@ -2094,7 +2094,7 @@ header .logo a {color: var(--color-a);font-size: 30px;margin: 0;padding: 0;}
 	  width: 124px;
 	}
   }
-.container {width: 100%;height: 140px;display: flex;flex-direction: column;justify-content: center;align-items: center;}
+.container {width: 100%;height: 100px;margin-top: 40px;;display: flex;flex-direction: column;justify-content: center;align-items: center;}
 .button:not(:last-child) {margin-bottom: 64px;}
   
 
