@@ -435,25 +435,9 @@ img.pull-left {
  * pace.js styles - minimal  - (_document-setup.scss)
  * -------------------------------------------------------------------
  */
-.pace {
-	-webkit-pointer-events: none;
-	pointer-events: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	user-select: none;
-}
-.pace-inactive {
-	display: none;
-}
-.pace .pace-progress {
-	background: var(--color-a);
-	position: fixed;
-	z-index: 900;
-	top: 0;
-	right: 100%;
-	width: 100%;
-	height: 6px;
-}
+.pace {-webkit-pointer-events: none;pointer-events: none;-webkit-user-select: none;-moz-user-select: none;user-select: none;}
+.pace-inactive {display: none;}
+.pace .pace-progress {background: var(--color-a);position: fixed;z-index: 900;top: 0;right: 100%;width: 100%;height: 6px;}
 
 /** 
  * ===================================================================
@@ -556,6 +540,9 @@ img.pull-left {
 	  transform: skewX(10deg) skewY(-10deg);
 	}
   }
+@media only screen and (max-width:500px) {
+	.glitch{font-size: 25px}
+}
   
 
 /** 
