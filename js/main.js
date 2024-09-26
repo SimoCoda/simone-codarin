@@ -16,6 +16,7 @@
     document.getElementById("year").textContent = currentYear;
 
     document.querySelector("#intro #myVideo").setAttribute("autplay", "true");
+    document.querySelector("#intro #myVideo").setAttribute('playsinline', '')
     
     // will first fade out the loading animation
     $("#loader").fadeOut("slow", function () {
