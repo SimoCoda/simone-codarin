@@ -15,9 +15,9 @@
     const currentYear = new Date().getFullYear();
     document.getElementById("year").textContent = currentYear;
 
+    document.querySelector("#intro #myVideo").setAttribute("autplay", "true");
     let video = document.querySelectorAll("video")
     video.forEach(vid => {
-      vid.setAttribute("autplay", "true");
       // IMPORTANTE PER FAR AVVIARE IL VIDEO ANCHE SU DISPOSITIVO MOBILE
       vid.setAttribute('playsinline', '')
       // Funzione per rilelete se il dispositivo Ã¨ mobile
