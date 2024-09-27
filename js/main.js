@@ -15,11 +15,13 @@
     const currentYear = new Date().getFullYear();
     document.getElementById("year").textContent = currentYear;
 
-    let video = document.querySelector("#intro #myVideo")
-    video.setAttribute("autplay", "true");
-    // IMPORTANTE PER FAR AVVIARE IL VIDEO ANCHE SU DISPOSITIVO MOBILE
-    video.setAttribute('playsinline', '')
-    // Funzione per rilelete se il dispositivo Ã¨ mobile
+    let video = document.querySelectorAll("video")
+    video.forEach(vid => {
+      vid.setAttribute("autplay", "true");
+      // IMPORTANTE PER FAR AVVIARE IL VIDEO ANCHE SU DISPOSITIVO MOBILE
+      vid.setAttribute('playsinline', '')
+      // Funzione per rilelete se il dispositivo Ã¨ mobile
+    })
     if(video){
       function isMobileDevice() {
         return /Mobi|Android/i.test(navigator.userAgent);
@@ -41,7 +43,7 @@
         }
       })
     })
-    
+
     const lightbox = GLightbox({
       selector: 'a[data-glightbox]',
       width: '100%', // Rende il lightbox più largo
