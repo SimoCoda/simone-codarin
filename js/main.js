@@ -20,6 +20,10 @@
       //   // Se il dispositivo Ã¨ mobile, aggiungi l'attributo playsinline
     if (innerWidth < 850 && videoIntro) {
       videoIntro.setAttribute("src", "video/codice_phone.mp4");
+      document.querySelectorAll(".popup-modal .media video").forEach(videoMobile => {
+        videoMobile.setAttribute("playsinline", "");
+        videoMobile.play();
+      })
     }
     // document.querySelector("#intro #myVideo").setAttribute("autplay", "true");
     // let video = document.querySelectorAll("video")
