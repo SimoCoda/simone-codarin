@@ -41,7 +41,7 @@
         }
       })
     })
-
+    
     const lightbox = GLightbox({
       selector: 'a[data-glightbox]',
       width: '100%', // Rende il lightbox più largo
