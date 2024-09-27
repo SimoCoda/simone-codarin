@@ -15,34 +15,35 @@
     const currentYear = new Date().getFullYear();
     document.getElementById("year").textContent = currentYear;
 
-    document.querySelector("#intro #myVideo").setAttribute("autplay", "true");
-    let video = document.querySelectorAll("video")
-    video.forEach(vid => {
-      // IMPORTANTE PER FAR AVVIARE IL VIDEO ANCHE SU DISPOSITIVO MOBILE
-      vid.setAttribute('playsinline', '')
-      // Funzione per rilelete se il dispositivo Ã¨ mobile
-    })
-    if(video){
-      function isMobileDevice() {
-        return /Mobi|Android/i.test(navigator.userAgent);
-      }
-      // Se il dispositivo Ã¨ mobile, aggiungi l'attributo playsinline
-      if (isMobileDevice() && video) {
-        video.setAttribute("src", "video/codice_phone.mp4");
-      }
-    }
-    let videoModali = document.querySelectorAll(".popup-modal .media video");
-    document.querySelectorAll(".portfolio-content .folio-item .item-wrap a.overlay").forEach(el => {
-      el.addEventListener("click", function(e){
-        e.preventDefault();
-        if(videoModali){
-          videoModali.forEach((v) => {
-            v.setAttribute("playsinline", "");
-            v.play();
-          });
-        }
-      })
-    })
+    // document.querySelector("#intro #myVideo").setAttribute("autplay", "true");
+    // let video = document.querySelectorAll("video")
+    // video.forEach(vid => {
+    //   // IMPORTANTE PER FAR AVVIARE IL VIDEO ANCHE SU DISPOSITIVO MOBILE
+    //   vid.setAttribute('playsinline', '')
+    //   // Funzione per rilelete se il dispositivo Ã¨ mobile
+    // })
+    // if(video){
+    //   function isMobileDevice() {
+    //     return /Mobi|Android/i.test(navigator.userAgent);
+    //   }
+    //   // Se il dispositivo Ã¨ mobile, aggiungi l'attributo playsinline
+    //   if (isMobileDevice() && video) {
+    //     video.setAttribute("src", "video/codice_phone.mp4");
+    //   }
+    // }
+    // let videoModali = document.querySelectorAll(".popup-modal .media video");
+    // document.querySelectorAll(".portfolio-content .folio-item .item-wrap a.overlay").forEach(el => {
+    //   el.addEventListener("click", function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //     if(videoModali != 0){
+    //       videoModali.forEach((v) => {
+    //         v.setAttribute("playsinline", "");
+    //         v.play();
+    //       });
+    //     }
+    //   })
+    // })
 
     const lightbox = GLightbox({
       selector: 'a[data-glightbox]',
