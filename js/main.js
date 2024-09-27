@@ -15,6 +15,12 @@
     const currentYear = new Date().getFullYear();
     document.getElementById("year").textContent = currentYear;
 
+    let videoIntro = document.querySelector("#intro #myVideo");
+    videoIntro.setAttribute("playsinline", '');
+      //   // Se il dispositivo Ã¨ mobile, aggiungi l'attributo playsinline
+    if (innerWidth < 850 && videoIntro) {
+      videoIntro.setAttribute("src", "video/codice_phone.mp4");
+    }
     // document.querySelector("#intro #myVideo").setAttribute("autplay", "true");
     // let video = document.querySelectorAll("video")
     // video.forEach(vid => {
