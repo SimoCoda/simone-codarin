@@ -41,6 +41,14 @@
         }
       })
     })
+
+    const lightbox = GLightbox({
+      selector: 'a[data-glightbox]',
+      width: '100%', // Rende il lightbox più largo
+      height: '100%', // Rende il lightbox alto quanto l'intero documento
+      zoomable: false, // Disabilita lo zoom se necessario
+      draggable: false, // Disabilita la possibilità di trascinare il documento
+    });
     
     
     // will first fade out the loading animation

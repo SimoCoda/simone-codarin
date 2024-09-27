@@ -1851,3 +1851,9 @@ footer .copyright span:last-child::after {display: none;}
 #go-top a:hover {background: #000000;}
 
 /*# sourceMappingURL=main.css.map */
+
+/* Glightbox */
+
+.glightbox-container {width: 100% !important;height: 100% !important;max-width: none !important;max-height: none !important;}
+.gslide iframe {width: 100% !important;height: 100% !important;}
+.glightbox-iframe {width: auto !important; /* Lascia che la larghezza sia calcolata automaticamente */height: 100% !important; /* Assicura che l'altezza occupi tutto lo schermo */}
