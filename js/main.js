@@ -30,12 +30,18 @@
       }
     }
     let videoModali = document.querySelectorAll(".popup-modal .media video");
-    if(videoModali){
-      videoModali.forEach((v) => {
-        v.setAttribute("playsinline", "");
-        v.play();
-      });
-    }
+    document.querySelectorAll(".portfolio-content .folio-item .item-wrap a.overlay").forEach(el => {
+      el.addEventListener("click", function(e){
+        e.preventDefault();
+        if(videoModali){
+          videoModali.forEach((v) => {
+            v.setAttribute("playsinline", "");
+            v.play();
+          });
+        }
+      })
+    })
+    
     
     // will first fade out the loading animation
     $("#loader").fadeOut("slow", function () {
