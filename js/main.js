@@ -300,4 +300,4 @@
 })(jQuery);
 
 // GSAP ANIMATION
-gsap.to(".intro-content", {})
+// gsap.to(".intro-content", {})
