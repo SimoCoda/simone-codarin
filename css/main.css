@@ -85,7 +85,6 @@ body {
 	font-size: 1.7rem;
 	line-height: 3rem;
 	color: #6e6e6e;
-	overflow: hidden;
 }
 
 /**
@@ -1349,7 +1348,7 @@ header .logo a {color: var(--color-a);font-size: 30px;margin: 0;padding: 0;}
  *
  * ------------------------------------------------------------------- 
  */
-#riepilogo {padding-top: 4rem;padding-bottom: 4rem;}
+#riepilogo {padding-top: 4rem;padding-bottom: 4rem;overflow:hidden;}
 #riepilogo .resume-header {text-align: center;}
 #riepilogo .resume-header h2 {color: var(--color-a);}
 #riepilogo .resume-timeline {max-width: 980px;}
