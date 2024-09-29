@@ -1115,7 +1115,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {border: 0;padding: 0;}
  */
 header {position: fixed;width: 100%;min-height: 66px;z-index: 600;}
 header .row {position: relative;min-height: 66px;}
-header .top-bar {display: flex;align-items: center;justify-content: center;gap: 10px;background: #000000;min-width: 140px;min-height: 45px;position: absolute;left: 90px;top: 0;}
+header .top-bar{display: flex;align-items: center;justify-content: center;gap: 10px;background: #000000;min-width: 140px;min-height: 45px;position: absolute;left: 90px;top: 0;opacity: 1;}
 header .logo {display: flex;align-items: center;justify-content: flex-start;}
 header .logo a {color: var(--color-a);font-size: 30px;margin: 0;padding: 0;}
 
@@ -1211,7 +1211,6 @@ header .logo a {color: var(--color-a);font-size: 30px;margin: 0;padding: 0;}
 
 .intro-social{display: block;position: absolute;width: 100%;left: 0;bottom: 7.2rem;font-size: 3.3rem;margin: 0;padding: 0}
 .intro-social li{display: inline-block;margin: 0 20px;padding: 0;}
-.intro-social li.instagram-icon-wrapper{transition: all .2s linear;}
 .intro-social li i{font-size: 5rem;transition: all .2s linear;}
 .intro-social li:hover i.fa-linkedin{color: #0A66C1;}
 /* .intro-social li:hover i.fa-square-instagram{color: #E24760} */

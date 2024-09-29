@@ -14,6 +14,7 @@
   $(window).load(function () {
     const currentYear = new Date().getFullYear();
     document.getElementById("year").textContent = currentYear;
+    gsap.registerPlugin(ScrollTrigger)
 
     let videoIntro = document.querySelector("#intro #myVideo");
     videoIntro.setAttribute("playsinline", '');
@@ -44,6 +45,7 @@
       $("#preloader").delay(300).fadeOut("slow");
       
       trimText();
+      animazioniGsap();
     });
   });
 
@@ -302,5 +304,16 @@
   });
 })(jQuery);
 
-// GSAP ANIMATION
-// gsap.to(".intro-content", {})
+// GSAP ANIMAZIONI
+function animazioniGsap(){
+  gsap.from('.top-bar', {scrollTrigger: "header",duration:2, ease: "expo.out",y: -250, scale: .5})
+  gsap.from('.intro-content', {scrollTrigger: "#intro" ,scale: .1, duration: 2, ease: "bounce.out"});
+  gsap.from('.intro-social li', {scrollTrigger: ".intro-social", y: 150, duration: 2, ease: "Power3.easeOut", stagger: .2});
+  
+  gsap.from('#about .section-intro .col-twelve h5', {scrollTrigger: "#about .section-intro .col-twelve", opacity: 0, y: -200, duration: 2, ease: "Power3.easeOut"});
+  gsap.from('#about .section-intro .col-twelve h1', {scrollTrigger: "#about .section-intro .col-twelve", opacity: 0, y: 200, duration: 2, ease: "Power3.easeOut", delay: .5});
+  gsap.from('#about .image-profilo', {scrollTrigger: "#about .section-intro", opacity: 0,scale: .1, duration: 2, ease: "circ.out"});
+
+  gsap.from('#riepilogo .resume-timeline .timeline-wrap .left', {scrollTrigger: "#riepilogo", opacity: 0, x: -200, duration: 2, ease: "Power3.easeOut", delay: .5});
+  gsap.from('#riepilogo .resume-timeline .timeline-wrap .right', {scrollTrigger: "#riepilogo", opacity: 0, x: 200, duration: 2, ease: "Power3.easeOut", delay: .5});
+}
