@@ -17,6 +17,9 @@
 
     let videoIntro = document.querySelector("#intro #myVideo");
     videoIntro.setAttribute("playsinline", '');
+    if(document.querySelector('.mfp-bg.mfp-fade.mfp-ready')){
+      document.querySelector('.mfp-content .popup-modal video').play()
+    }
       //   // Se il dispositivo Ã¨ mobile, aggiungi l'attributo playsinline
     if (innerWidth < 850 && videoIntro) {
       videoIntro.setAttribute("src", "video/codice_phone.mp4");
