@@ -315,17 +315,18 @@ function animazioniGsap(){
   gsap.from('#about .section-intro .col-twelve .subtitle', {scrollTrigger: {trigger: "#about", start: "top 80%"}, opacity: 0, y: 200, duration: 2, ease: "Power3.out", delay: .1});
   gsap.from('#about .image-profilo', {scrollTrigger: {trigger: "#about", start: "top 80%"}, opacity: 0,scale: .1, duration: 2, ease: "bounce.out"});
   gsap.from('#about .description', {scrollTrigger: {trigger: "#about", start: "top 80%"}, opacity: 0, duration:2.5,ease: "power4.out",x: 1000});
-  gsap.from('#about .about-content .tab-full .title', {scrollTrigger: "#about .about-content",opacity: 0, duration:1, ease: "power4.in",y: 200});
-  gsap.from('#about .about-content .profilo ul li', {scrollTrigger: "#about .about-content", opacity: 0, duration:2, ease: "power4.out",x: -1000, delay: .2, stagger: .2});
-  gsap.from('#about .about-content .skills ul li', {scrollTrigger: "#about .about-content", opacity: 0, duration:2.3, ease: "power4.out",x: 1000, delay: .3, stagger: .2});
+  gsap.from('#about .about-content .profilo .title', {scrollTrigger: "#about .about-content .profilo",opacity: 0, duration:1, ease: "power4.in",y: 200});
+  gsap.from('#about .about-content .skills .title', {scrollTrigger: "#about .about-content .skills",opacity: 0, duration:1, ease: "power4.in",y: 200});
+  gsap.from('#about .about-content .profilo ul li', {scrollTrigger: "#about .about-content .profilo", opacity: 0, duration:1, ease: "power4.out",x: -900, delay: .1, stagger: .2});
+  gsap.from('#about .about-content .skills ul li', {scrollTrigger: "#about .about-content .skills", opacity: 0, duration:1, ease: "power4.out",x: 900, delay: .2, stagger: .2});
   gsap.from('#about .button-section .col-twelve .contattami', {scrollTrigger: "#about .button-section", opacity: 0, y: 200, duration:1, ease: "power4.in"});
-  gsap.from('#about .button-section .col-twelve .scarica-cv', {scrollTrigger: "#about .button-section", opacity: 0, x: 1000, duration:1, ease: "power4.in"});
+  gsap.from('#about .button-section .col-twelve .scarica-cv', {scrollTrigger: "#about .button-section", opacity: 0, x: 850, duration:1, ease: "power4.in"});
   // sezione riepilogo
   gsap.from('#riepilogo .section-intro .col-twelve .title-page', {scrollTrigger: "#riepilogo",opacity: 0, y: -200, duration: 2, ease: "Power3.out"});
   gsap.from('#riepilogo .section-intro .col-twelve .subtitle', {scrollTrigger: "#riepilogo", opacity: 0, y: 200, duration: 2, ease: "Power3.out", delay: .2});
   gsap.from('#riepilogo .resume-timeline .resume-header .esperienze-lavorative', {scrollTrigger: "#riepilogo .resume-timeline", scale: .1, opacity: 0, duration: 2, ease: "Power3.out", delay: .4});
-  gsap.from('#riepilogo .lavoro .timeline-wrap .left', {scrollTrigger: ".lavoro .timeline-wrap", opacity: 0, x: -200, duration: 2, ease: "Power3.out", delay: .5, stagger: .5});
-  gsap.from('#riepilogo .lavoro .timeline-wrap .right', {scrollTrigger: ".lavoro .timeline-wrap", opacity: 0, x: 200, duration: 2, ease: "Power3.out", delay: .2});
+  gsap.from('#riepilogo .lavoro .timeline-wrap .left', {scrollTrigger: ".lavoro .timeline-wrap", opacity: 0, x: -200, duration: 2, ease: "Power3.out", delay: .5, stagger: .1});
+  gsap.from('#riepilogo .lavoro .timeline-wrap .right', {scrollTrigger: ".lavoro .timeline-wrap", opacity: 0, x: 200, duration: 2, ease: "Power3.out", delay: .2, stagger: .1});
   gsap.from('#riepilogo .istruzione .resume-header .esperienze-lavorative', {scrollTrigger: ".istruzione .resume-wrap", scale: .1, opacity: 0, duration: 2, ease: "Power3.out", delay: .4});
   gsap.from('#riepilogo .istruzione .timeline-wrap .left', {scrollTrigger: ".istruzione .timeline-wrap", opacity: 0, x: -200, duration: 2, ease: "Power3.out", delay: .5, stagger: .5});
   gsap.from('#riepilogo .istruzione .timeline-wrap .right', {scrollTrigger: ".istruzione .timeline-wrap", opacity: 0, x: 200, duration: 2, ease: "Power3.out", delay: .2});
@@ -335,16 +336,16 @@ function animazioniGsap(){
   gsap.from('#portfolio .section-intro .col-twelve .lead', {scrollTrigger: "#portfolio", scale: .1, opacity: 0, duration: 2, ease: "Power3.out", delay: .4});
   gsap.from('#portfolio .portfolio-content #folio-wrapper .left', {scrollTrigger: {
     trigger: "#portfolio",
-    start: "top top",   // L'animazione inizia quando #portfolio entra nel viewport
+    start: "-=400",   // L'animazione inizia quando #portfolio entra nel viewport
     end: "bottom bottom", // L'animazione finisce quando #portfolio esce dal viewport
     // scrub: true,         // L'animazione sarà legata allo scroll
-  }, opacity: 0, x: -200, duration: 2, ease: "Power3.in", delay: .2, stagger: .1});
+  }, opacity: 0, x: -200, duration: 2, ease: "Power3.in", stagger: .1});
   gsap.from('#portfolio .portfolio-content #folio-wrapper .right', {scrollTrigger: {
     trigger: "#portfolio",
-    start: "top top",   // L'animazione inizia quando #portfolio entra nel viewport
+    start: "-=400",   // L'animazione inizia quando #portfolio entra nel viewport
     end: "bottom bottom", // L'animazione finisce quando #portfolio esce dal viewport
     // scrub: true,         // L'animazione sarà legata allo scroll
-  }, opacity: 0, x: 200, duration: 2, ease: "Power3.in", delay: .2, stagger: .1});
+  }, opacity: 0, x: 200, duration: 2, ease: "Power3.in", stagger: .1});
   // cosa posso fare per te
   gsap.from('#servizi .section-intro .col-twelve .subtitle', {scrollTrigger: "#servizi", opacity: 0, y: 200, duration: 2, ease: "Power3.in"});
   gsap.from('#servizi .section-intro .col-twelve .lead', {scrollTrigger: "#servizi", scale: .1, opacity: 0, duration: 2, ease: "Power3.in", delay: .1});
