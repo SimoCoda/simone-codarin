@@ -324,10 +324,10 @@ function animazioniGsap(){
   // sezione riepilogo
   gsap.from('#riepilogo .section-intro .col-twelve .title-page', {scrollTrigger: "#riepilogo",opacity: 0, y: -200, duration: 2, ease: "Power3.out"});
   gsap.from('#riepilogo .section-intro .col-twelve .subtitle', {scrollTrigger: "#riepilogo", opacity: 0, y: 200, duration: 2, ease: "Power3.out", delay: .2});
-  gsap.from('#riepilogo .resume-timeline .resume-header .esperienze-lavorative', {scrollTrigger: "#riepilogo .resume-timeline", scale: .1, opacity: 0, duration: 2, ease: "Power3.out", delay: .4});
+  gsap.from('#riepilogo .lavoro .resume-header .esperienze-lavorative', {scrollTrigger: "#riepilogo .lavoro", scale: .1, opacity: 0, duration: 2, ease: "Power3.out", delay: .4});
   gsap.from('#riepilogo .lavoro .timeline-wrap .left', {scrollTrigger: ".lavoro .timeline-wrap", opacity: 0, x: -200, duration: 2, ease: "Power3.out", delay: .5, stagger: .1});
   gsap.from('#riepilogo .lavoro .timeline-wrap .right', {scrollTrigger: ".lavoro .timeline-wrap", opacity: 0, x: 200, duration: 2, ease: "Power3.out", delay: .2, stagger: .1});
-  gsap.from('#riepilogo .istruzione .resume-header .esperienze-lavorative', {scrollTrigger: ".istruzione .resume-wrap", scale: .1, opacity: 0, duration: 2, ease: "Power3.out", delay: .4});
+  gsap.from('#riepilogo .istruzione .resume-header .istruzione', {scrollTrigger: "#riepilogo .istruzione", scale: .1, opacity: 0, duration: 2, ease: "Power3.out", delay: .4});
   gsap.from('#riepilogo .istruzione .timeline-wrap .left', {scrollTrigger: ".istruzione .timeline-wrap", opacity: 0, x: -200, duration: 2, ease: "Power3.out", delay: .5, stagger: .5});
   gsap.from('#riepilogo .istruzione .timeline-wrap .right', {scrollTrigger: ".istruzione .timeline-wrap", opacity: 0, x: 200, duration: 2, ease: "Power3.out", delay: .2});
   // portfolio
