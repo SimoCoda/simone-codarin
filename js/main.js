@@ -311,14 +311,15 @@ function animazioniGsap(){
   gsap.from('.intro-content', {scrollTrigger: "#intro" ,scale: .1, duration: 2, ease: "bounce.out"});
   gsap.from('.intro-social li', {scrollTrigger: ".intro-social", y: 150, duration: 2, ease: "Power3.out", stagger: .2});
   // sezione about
-  gsap.from('#about .section-intro .col-twelve .title-page', {scrollTrigger: "#about", opacity: 0, y: -200, duration: 2, ease: "Power3.out"});
-  gsap.from('#about .section-intro .col-twelve .subtitle', {scrollTrigger: "#about", opacity: 0, y: 200, duration: 2, ease: "Power3.out", delay: .5});
-  gsap.from('#about .image-profilo', {scrollTrigger: "#about .section-intro", opacity: 0,scale: .1, duration: 2, ease: "bounce.out"});
-  gsap.from('#about .description', {scrollTrigger: "#about .section-intro", opacity: 0, duration:2.5,ease: "power4.out",x: 1000});
-  gsap.from('#about .about-content .profilo', {scrollTrigger: "#about .about-content", opacity: 0, duration:2, ease: "power4.out",x: -1000, delay: .2});
-  gsap.from('#about .about-content .skills', {scrollTrigger: "#about .about-content", opacity: 0, duration:2.3, ease: "power4.out",x: 1000, delay: .3});
-  gsap.from('#about .button-section .col-twelve .contattami', {scrollTrigger: "#about .button-section", opacity: 0, y: 200, duration:1, ease: "power4.in", delay: .2});
-  gsap.from('#about .button-section .col-twelve .scarica-cv', {scrollTrigger: "#about .button-section", opacity: 0, x: 1000, duration:1, ease: "power4.in", delay: .2});
+  gsap.from('#about .section-intro .col-twelve .title-page', {scrollTrigger: {trigger: "#about", start: "top 80%"}, opacity: 0, y: -200, duration: 2, ease: "Power3.out"});
+  gsap.from('#about .section-intro .col-twelve .subtitle', {scrollTrigger: {trigger: "#about", start: "top 80%"}, opacity: 0, y: 200, duration: 2, ease: "Power3.out", delay: .1});
+  gsap.from('#about .image-profilo', {scrollTrigger: {trigger: "#about", start: "top 80%"}, opacity: 0,scale: .1, duration: 2, ease: "bounce.out"});
+  gsap.from('#about .description', {scrollTrigger: {trigger: "#about", start: "top 80%"}, opacity: 0, duration:2.5,ease: "power4.out",x: 1000});
+  gsap.from('#about .about-content .tab-full .title', {scrollTrigger: "#about .about-content",opacity: 0, duration:1, ease: "power4.in",y: 200});
+  gsap.from('#about .about-content .profilo ul li', {scrollTrigger: "#about .about-content", opacity: 0, duration:2, ease: "power4.out",x: -1000, delay: .2, stagger: .2});
+  gsap.from('#about .about-content .skills ul li', {scrollTrigger: "#about .about-content", opacity: 0, duration:2.3, ease: "power4.out",x: 1000, delay: .3, stagger: .2});
+  gsap.from('#about .button-section .col-twelve .contattami', {scrollTrigger: "#about .button-section", opacity: 0, y: 200, duration:1, ease: "power4.in"});
+  gsap.from('#about .button-section .col-twelve .scarica-cv', {scrollTrigger: "#about .button-section", opacity: 0, x: 1000, duration:1, ease: "power4.in"});
   // sezione riepilogo
   gsap.from('#riepilogo .section-intro .col-twelve .title-page', {scrollTrigger: "#riepilogo",opacity: 0, y: -200, duration: 2, ease: "Power3.out"});
   gsap.from('#riepilogo .section-intro .col-twelve .subtitle', {scrollTrigger: "#riepilogo", opacity: 0, y: 200, duration: 2, ease: "Power3.out", delay: .2});
