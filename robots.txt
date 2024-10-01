@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://simonecodarin.netlify.app/xml/sitemap.xml
