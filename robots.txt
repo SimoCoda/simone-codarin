@@ -1,4 +1,5 @@
 User-agent: *
-Allow: /
+Allow: /favicon.png
 
 Sitemap: https://simonecodarin.netlify.app/xml/sitemap.xml
+
