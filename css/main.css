@@ -1261,7 +1261,21 @@ header .logo a {color: var(--color-a);font-size: 30px;margin: 0;padding: 0;}
 
 .intro-info{display: flex;gap: 30px;justify-content: space-between;margin-top: 40px;}
 .intro-info .image-profilo{width: 150px;height: 150px;position: relative;}
-.intro-info .image-profilo .io-profilo{width: 100%;height: 100%;object-fit: cover;border-radius: 50%;object-position: top;border: 3px solid var(--color-a2)}
+.intro-info .image-profilo .freccia img{animation: rotateFreccia 10s linear infinite;transform: rotate(20deg);}
+
+@keyframes rotateFreccia {
+	0% {transform: rotate(20deg);}
+	50% {transform: rotate(35deg);}
+	100% {transform: rotate(20deg);}
+}
+
+.intro-info .image-profilo .io-profilo{width: 100%;height: 100%;object-fit: cover;border-radius: 50%;object-position: top;border: 3px solid var(--color-a2);transition: all .2s ease-in-out;}
+
+@media only screen and (min-width:1024px) {
+	.intro-info .image-profilo .io-profilo{filter: grayscale(.3);}
+	.intro-info .image-profilo .io-profilo:hover{filter: grayscale(0);}
+}
+
 .intro-info .lead{text-align: left;font-size: 1.8rem;margin-bottom: 10px;}
 
 .about-content {position: relative;text-align: left;max-width: 850px;margin-bottom: 3.6rem;}
