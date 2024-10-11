@@ -30,6 +30,30 @@
       })
     }
 
+    const tabFrontEnd = document.querySelector('.tabs .tab-link.frontend');
+    const tabContentsFrontEnd = document.querySelector('#Frontend');
+    const tabBackEnd = document.querySelector('.tabs .tab-link.backend');
+    const tabContentsBackEnd = document.querySelector('#Backend');
+
+    if(tabFrontEnd && tabContentsFrontEnd || tabBackEnd && tabContentsBackEnd) {
+      tabFrontEnd.addEventListener('click', () => {
+        tabBackEnd.classList.remove('active');
+        tabFrontEnd.classList.add('active');
+        tabContentsFrontEnd.classList.add('active');
+        tabContentsBackEnd.classList.remove('active');
+      });
+      tabBackEnd.addEventListener('click', () => {
+        tabFrontEnd.classList.remove('active');
+        tabBackEnd.classList.add('active');
+        tabContentsBackEnd.classList.add('active');
+        tabContentsFrontEnd.classList.remove('active');
+      });
+    }
+
+
+  // Mostra di default la prima tab
+  document.getElementById('Frontend').classList.add('active');
+
     const lightbox = GLightbox({
       selector: 'a[data-glightbox]',
       width: '100%', // Rende il lightbox più largo
