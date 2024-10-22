@@ -57,20 +57,21 @@
 
     // Mostra di default la prima tab
     document.getElementById("Frontend").classList.add("active");
-
-    let lastScrollPosition = 0;
-    const lightbox = GLightbox({
-      selector: "a[data-glightbox]",
-      width: "100%", // Rende il lightbox più largo
-      height: "100%", // Rende il lightbox alto quanto l'intero documento
-      zoomable: false, // Disabilita lo zoom se necessario
-      draggable: false, // Disabilita la possibilità di trascinare il documento
-      onOpen: () => {
-        lastScrollPosition = window.scrollY;
-      },
-      onClose: () => {
-        window.scrollTo(0, lastScrollPosition);
-      },
+    let scrollPosition = 0;
+    var lightboxImage = GLightbox({
+      selector: '.glightbox',
+      openEffect: 'zoom',
+      closeEffect: 'fade',
+    });
+    lightboxImage.on('open', () => {
+      // document.body.style.overflow = 'hidden';
+      scrollPosition = window.scrollY;
+    });
+    lightboxImage.on('close', () => {
+      window.scrollTo(0, scrollPosition);
+      // Torna all'ancora #about
+      // window.location.hash = '#about';
+      // document.body.style.overflow = 'auto';
     });
 
     // will first fade out the loading animation
