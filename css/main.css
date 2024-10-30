@@ -37,7 +37,7 @@
  */
 @import url("fonts.css");
 @import url("font-awesome/css/all.min.css");
-@import url("glightbox/css/glightbox.min.css");
+@import url("../librerie/glightbox/dist/css/glightbox.min.css");
 @import url("micons/micons.css");
 
 
