@@ -1,13 +1,11 @@
-﻿# Simone Codarin - Sviluppatore full stack
-👋 Ciao! Sono Simone
-La mia avventura nel mondo tech è iniziata con la grafica, ma la passione per la programmazione mi ha spinto a esplorare nuovi orizzonti. Dopo un periodo di lavoro in altri settori, ho deciso di seguire il mio vero interesse: lo sviluppo web.
+# Simone Codarin - Sviluppatore full stack
+👋 Ciao! Sono Simone Codarin, uno sviluppatore Full Stack con un percorso un po’ particolare: ho iniziato come operaio, ma la passione per il web mi ha portato a studiare e cambiare completamente strada. Dopo essere diventato sviluppatore front-end in una piccola azienda, oggi lavoro per una multinazionale come full stack.
 
-Dopo quasi due anni di studio intenso, sono riuscito a trasformare la mia passione in una professione. Ho iniziato come sviluppatore front-end, ma con il tempo ho ampliato le mie competenze, lavorando anche come full-stack developer.
+💻 Cosa faccio
+Mi occupo dello sviluppo di funzionalità per il software aziendale che usiamo internamente e che usano i nostri clienti. Lavoro con Vue.js per il front-end e con C# ASP.NET e SQL Server per il back-end.
 
-Oggi sviluppo interfacce moderne e performanti utilizzando HTML, CSS, JavaScript e Bootstrap, ma ho esperienza anche con Tailwind, Vue, React e Angular. Nel mio percorso full-stack ho avuto modo di approfondire anche il back-end, lavorando con Node.js, Express e database relazionali e non relazionali.
+🚀 Perché mi piace quello che faccio
+La parte più stimolante è vedere come tutto si collega: non mi occupo solo dell’interfaccia, ma anche delle logiche dietro ogni funzionalità. Vue.js è fantastico da usare, e imparare il backend mi sta dando una prospettiva completamente nuova su come funzionano le cose.
 
-🚀 Perché amo questo lavoro?
-Perché mi permette di combinare creatività e logica, trasformando idee in esperienze interattive. Amo le sfide e la possibilità di migliorarmi continuamente. Il codice per me non è solo uno strumento di lavoro, ma una vera e propria passione che mi fa perdere la cognizione del tempo.
-
-🎯 Oltre il codice
-Quando non sono davanti al PC, mi dedico alle mie altre passioni: sport, musica e videogames. Sono sempre alla ricerca di nuove sfide, sia nel lavoro che nella vita, per crescere come sviluppatore e come persona.
+🔥 Il mio percorso
+Sono molto orgoglioso del cammino che ho fatto. Partito come operaio, ho ricominciato a studiare e sono riuscito prima a entrare in una piccola azienda come front-end developer, poi a crescere fino a lavorare per una multinazionale come full stack. E questo è solo l’inizio!
