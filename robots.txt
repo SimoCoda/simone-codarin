@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://simonecodarin.netlify.app/sitemap.xml
-
+Sitemap: https://simonecodarin.github.io/sitemap.xml
