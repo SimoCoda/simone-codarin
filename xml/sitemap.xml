@@ -18,5 +18,17 @@
         <changefreq>monthly</changefreq>
         <priority>0.80</priority>
     </url>
+    <url>
+        <loc>https://simonecodarin.github.io/</loc>
+        <lastmod>2024-09-30T13:06:30+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://simonecodarin.github.io/doc/cv.pdf</loc>
+        <lastmod>2024-09-30T13:06:30+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
 
 </urlset>
